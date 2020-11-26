@@ -26,7 +26,7 @@ def show_numbered_list(title, data):
         people = [p.strip() for p in people]
         people = data.split(",")
         for i in range(len(people)):
-            print(f"{i+1}. {people[i]}")
+            print(f"{i+1}.{people[i]}")
 
     
     elif title == "Aakkosjärjestys etunimen perusteella:":
@@ -42,7 +42,9 @@ def show_numbered_list(title, data):
     elif title == "Aakkosjärjestys sukunimen perusteella:":
         print("Aakkosjärjestys sukunimen perusteella:")
         people = data
-        people = [" ".join(reversed(p.split(" "))) for p in data]
+        people = people.split(",")
+        people = [p.strip() for p in people]
+        people = [" ".join(reversed(p.split(" "))) for p in people]
         people.sort()
         for i in range(len(people)):
             print(f"{i+1}. {people[i]}")
