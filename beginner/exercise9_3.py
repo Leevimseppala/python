@@ -1,5 +1,6 @@
 from functions import magazine_serial_check
 
+
 ISSN = input("Anna ISSN-sarjanumero:")
 validate = magazine_serial_check(ISSN)
 if validate:
