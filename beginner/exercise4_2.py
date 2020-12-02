@@ -11,6 +11,7 @@ elif txt2 == txt:
 elif txt != txt2:
     palindromi = "EI"
     print("Palindromi: " + palindromi)
+print("xd")
 
 
 
